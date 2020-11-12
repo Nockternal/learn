@@ -10,6 +10,7 @@ function draw() {
   // circle(x axis pos, y axis pos, diameter size)
   
   circle(100,100,100)
+  // circle(400,400,200)
   
   fill(204);
   //triangle(x axis point1, yaxis point1,
@@ -39,3 +40,4 @@ function draw() {
   arc(500, 200, 100, 100, PI, TWO_PI);
 
 }
+//Todo continue from here
