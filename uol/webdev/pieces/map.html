@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="https://www.froala.com">
+          <img src="./imgs/logo.png" height="30" alt="image">
+        </a>
+  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://www.froala.com">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.froala.com">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.froala.com">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.froala.com">Team</a>
+            </li>
+          </ul>
+  
+          <ul class="navbar-nav justify-content-end d-none d-lg-flex ml-md-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.froala.com"><i class="fab fa-slack"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.froala.com"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.froala.com"><i class="fab fa-github"></i></a>
+            </li>
+          </ul>
+  
+          <a class="btn btn-outline-primary ml-md-3" href="https://www.froala.com">Button</a>
+        </div>
+      </nav>
+    </div>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRVeCiCZqmilK34gK875L1rGM0awO_hXI&callback=initMap"
+      async
+    ></script>
+</body>
+</html>

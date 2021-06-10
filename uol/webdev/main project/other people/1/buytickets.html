@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title of page which and park name -->
+    <title>Purchase Tickets - Wally World</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site description and keywords for search engines and other crawlers -->
+    <meta name="description" content="Buy tickets and visit the best amusement park in the world with the most amazing collection of rides and attractions!">
+    <meta name="keywords" content="tickets, rollercoasters, rides, amusement park, family fun, vacation, holidays">
+</head>
+<body>
+    <!-- The header of our site which contains 2 menus and our main logo -->
+    <header>
+        <!-- A quicklook menu to provide customers park metadata referencing park conditions. Will be formatted horizontally -->
+        <div id="quicklook">
+            <ul class="horizontal-menu">
+                <li>9:23AM</li>
+
+                <!-- can add weather icon later with CSS and/or 3rd party resources -->
+                <li>30&deg;C</li> 
+                <li>Park Status: Open</li>
+                <li>Park Busyness: 40%</li>
+
+                <!-- Will add mini graph to show historical later -->
+                <li>Historical Load: </li>
+            </ul>
+        </div>
+        <span id="logo">
+            <!-- Home page link so user can always navigate home by clicking the logo -->
+            <a href="index.html">
+                <!-- Logo image -->
+                <img src="img/logo.png" alt="Wally World Logo" width="320" height="102" />
+            </a>
+        </span>
+
+        <!-- Main site navigation menu -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="thingstodo.html">Things to Do</a>
+            <a href="buytickets.html">Buy Tickets</a>
+        </nav>
+    </header>
+
+    <!-- Main content is all of our body content not in a header or footer -->
+    <div id="main-content">
+        
+        <!-- Content to give info to customers about purchasing tickets -->
+        <h1>Welcome to Group 35 Amusement Park ticket purchase page.</h1>
+        <h2> Avoid long lines! Buy Online to save money and time!</h2>
+        <p>Season Passes are on hold due to COVID-19 Pandemic but you can still purchase single day tickets!</p>
+        <p>Single Day tickets available for $79.99 only.</p>
+        <ul> 
+            <li>All patrons MUST purchase tickets online. On-site sales are closed.</li>
+            <li>All sales are non-refundable, but can be transferred without additional cost.</li>
+        </ul>
+
+        <!-- Form customer fills out and submits to purchase tickets -->
+        <form>
+            <!-- # of tickets to puchase -->
+            <label for="ticketNumber">Number of Tickets Required:</label><br>
+            <select id="ticketNumber" name="ticketNumber">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br>
+                
+            <!-- Customer's Name -->
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            
+            <!-- Customer's credit card information -->
+            <label for="CCNumber">Credit Card Number:</label><br>
+            <input type="text" id="CCNumber" name="CCNumber"><br><br>
+            
+            <label for="expmonth">Expiration Month/</label>
+            <label for="expYear">Year:</label><br>
+            <select id="expmonth" name="expmonth">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>    
+            <select id="expYear" name="expYear">
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select><br><br>
+            
+            <!-- Customer's Billing Address -->
+            <label for="address1">Billing Address Line 1:</label><br>
+            <input type="text" id="address1" name="address1"><br>
+            
+            <label for="address2">Billing Address Line 2:</label><br>
+            <input type="text" id="address2" name="address2"><br>
+            
+            <label for="City">City:</label><br>
+            <input type="text" id="City" name="City"><br>
+            
+            <label for="State">State:</label><br>
+            <input type="text" id="State" name="State"><br>
+            
+            <label for="postal">Postal Code:</label><br>
+            <input type="text" id="postal" name="postal"><br><br>
+            
+            <!-- Submit button submits form and attempts puchase -->
+            <input type="submit" value="Submit">
+            
+        </form>
+
+    </div> <!-- End Main Content -->
+
+    <!-- Footer section with Contact information -->
+    <footer>
+        <h2>Contact Us</h2>
+        <div>
+            <!-- Address data -->
+            <address>
+                <!-- Email with mailto link -->
+                <span>Email: <a href="mailto:contact@wallyworld.com">contact@wallyworld.com</a></span>
+                <!-- Phone number with tel link -->
+                <span>Phone: <a href="tel:15555555555">+1 (555) 555-5555</a></span>
+                <!-- Park address -->
+                <span>1234 Main Street, Hobbiton, Middle Earth</span>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>
