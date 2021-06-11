@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title of page which is the park name plus a brief description for search engines and linking -->
+    <title>Wally World - The World's Greatest Amusement Park</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site description and keywords for search engines and other crawlers -->
+    <meta name="description" content="Come visit the best amusement park in the world with the most amazing collection of rides and attractions!">
+    <meta name="keywords" content="rollercoasters, rides, amusement park, family fun, vacation, holidays">
+</head>
+<body>
+    <!-- The header of our site which contains 2 menus and our main logo -->
+    <header>
+        <!-- A quicklook menu to provide customers park metadata referencing park conditions. Will be formatted horizontally -->
+        <div id="quicklook">
+            <ul class="horizontal-menu">
+                <li>9:23AM</li>
+
+                <!-- can add weather icon later with CSS and/or 3rd party resources -->
+                <li>30&deg;C</li> 
+                <li>Park Status: Open</li>
+                <li>Park Busyness: 40%</li>
+
+                <!-- Will add mini graph to show historical later -->
+                <li>Historical Load: </li>
+            </ul>
+        </div>
+        <span id="logo">
+            <!-- Home page link so user can always navigate home by clicking the logo -->
+            <a href="index.html">
+                <!-- Logo image -->
+                <img src="img/logo.png" alt="Wally World Logo" width="320" height="102" />
+            </a>
+        </span>
+
+        <!-- Main site navigation menu -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="thingstodo.html">Things to Do</a>
+            <a href="buytickets.html">Buy Tickets</a>
+        </nav>
+    </header>
+
+    <!-- Main content is all of our body content not in a header or footer -->
+    <div id="main-content">
+        <!-- Wrapper image here as placeholder for carousel -->
+        <div class="wrapper-img page-section">
+
+            <!-- Image placeholder, would like to place a carousel here once we start using javascript and/or CSS. Would also use the image wrapper to declare the size for responsive behavior instead of explicit width/height attributes -->
+            <img src="img/water-ride-scream.jpg" alt="Riders screaming on splashing water ride" width="1000" height="562" /> 
+        </div>
+
+        <!-- Page Section is a sub-section of main content -->
+        <div class="page-section">
+            <!-- h2 Header in this section -->
+            <h2>About the Park</h2>
+            <p>
+                Wally World is the world's biggest and most exciting amusement park. Boasting over 22 rollercoasters including the worlds fastest rollercoaster: The Ludicrous Speedster.
+            </p>
+        </div>
+
+        <!-- Another page section -->
+        <div class="page-section">
+            <!-- H2 Header in this section -->
+            <h2>Things to Do</h2>
+
+            <!-- A page sub section for further organization -->
+            <div class="pagesub-section"> 
+
+                <!-- divide subsection into 2 columns -->
+                <div class="col-left"> 
+                    <!-- H3 Heading -->
+                    <h3>Attractions</h3>
+
+                    <!-- Link to Things To Do page to view details -->
+                    <a href="thingstodo.html">Explore More</a>
+                </div>
+
+                <!-- Right column -->
+                <div class="col-right">
+
+                    <!-- placeholder for mini carousel -->
+                    <div class="carousel-small">
+                        <img src="img/roller-coaster.jpg" alt="Roller coaster doing a barrel roll" height="200" width="400"/>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="pagesub-section"> 
+
+                <!-- divide subsection into 2 columns -->
+                <div class="col-left"> 
+                    <h3>Accomodations</h3>
+
+                    <!-- Link to Things To Do page to view details -->                    
+                    <a href="thingstodo.html">Explore More</a>
+                </div>
+
+                <!-- Right column -->
+                <div class="col-right">
+
+                    <!-- placeholder for mini carousel -->                    
+                    <div class="carousel-small">
+                        <img src="img/hotels.jpg" alt="Beautiful hotel with luxury pools" height="200" width="400"/>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="pagesub-section"> 
+
+                <!-- divide subsection into 2 columns -->
+                <div class="col-left"> 
+                    <h3>Dining</h3>
+
+                    <!-- Link to Things To Do page to view details -->                    
+                    <a href="thingstodo.html">Explore More</a>
+                </div>
+
+                <!-- Right column -->
+                <div class="col-right">
+
+                    <!-- placeholder for mini carousel -->                    
+                    <div class="carousel-small">
+                        <img src="img/dining.jpg" alt="Waiter serving dinner plates" height="200" width="400"/>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div> <!-- End Things to Do page section -->
+
+
+    </div> <!-- End Main Content -->
+
+    <!-- Footer section with Contact information -->
+    <footer>
+        <h2>Contact Us</h2>
+        <div>
+            <!-- Address data -->
+            <address>
+                <!-- Email with mailto link -->
+                <span>Email: <a href="mailto:contact@wallyworld.com">contact@wallyworld.com</a></span>
+                <!-- Phone number with tel link -->
+                <span>Phone: <a href="tel:15555555555">+1 (555) 555-5555</a></span>
+                <!-- Park address -->
+                <span>1234 Main Street, Hobbiton, Middle Earth</span>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>

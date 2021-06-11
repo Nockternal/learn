@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>University of London Theme Park Roller Attractions </title> 
+        <meta name="description" content="attractions available at the University of London theme park.">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheets/attractions.css">
+    </head>
+    
+	<header> 
+        
+		<div class="heading">
+        
+        <!-- Social Media --> 
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
+      
+      
+        <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" /></a>
+      
+      
+        <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="Youtube" /></a>
+      
+        <h1> Roller Coaster </h1>
+        <!-- Language Dropdown -->
+        <span class="dropdown"> 
+            <button class="dropbtn">English <i class="fa fa-caret-down"> </i> </button>
+            <span class="dropdown-content"> 
+                <a href="attractions.html"> English </a>
+                <a href="#"> Español</a>
+                <a href="#"> Русский </a>
+            </span> 
+        </span>
+        </div>
+        <!-- Nav bar --> 
+        <div class="navbar"> 
+            <!-- Logo  -->
+            <a href="index.html" class="logo">
+               <img src="images/logo3.png" alt="U of London Theme Park Logo" style="width:80px; height:30px;" > </a>
+
+            <a href="index.html"> Home </a>
+            <a href="attractions.html">Things to Do</a>
+            <a href="#">Places to Stay</a>
+            <a href="info.html">Help &amp; Rules</a>
+            
+            <button type="button" id="book"> <a href="#"> Book Now! </a>
+            
+            </button>
+        </div>
+        
+        
+        
+	</header>
+	
+    <body>
+    <!-- Slideshow container for the attraction images  --> 
+	<div class="slideshow-container">
+        <div class="mySlides fade"> 
+            <div class="numbertext"> 1/2 </div>
+            <img src="images/roller_coaster.jpeg" style="width:100%" alt="roller coaster">
+            <!-- <div class="imagetext"> <b>Attraction 1</b></div> --> 
+        </div>
+        
+        <div class="mySlides fade"> 
+            <div class="numbertext"> 2/2 </div>
+            <img src="images/gravitron.jpeg" style="width:100%" alt="gravitron">
+            <!-- <div class="imagetext"> <b>Attraction 2</b></div> --> 
+        </div>
+        <!-- Next and previous buttons --> 
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br> 
+    
+    <!-- Dots/circles help keep track of which image you're on --> 
+    <div style="text-align:center"> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    
+    <!-- animate slideshow --> 
+    <script> 
+        var slideIndex = 1; 
+        showSlides(slideIndex);
+        
+        function plusSlides(n){
+            showSlides(slideIndex += n); 
+        }
+        
+        function currentSlide(n) { 
+            showSlides(slideIndex= n ); 
+        }
+        
+        function showSlides(n) {
+            var i; 
+            var slides = document.getElementsByClassName("mySlides"); 
+            var dots = document.getElementsByClassName("dot"); 
+            if (n > slides.length) { slideIndex = 1;}
+            if (n < 1) { slideIndex = slides.length; }
+            for (i=0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for(i=0; i < dots.length; i++ ){
+                dots[i].className = dots[i].className.replace(" active","");            
+            }
+            slides[slideIndex-1].style.display = "block"; // causes the slide to display 
+            dots[slideIndex- 1].className += " active"; // causes the dot to be darker 
+        }
+    </script>
+    
+    <!-- Filters in form --> 
+    <section id="filters">
+        <h2> Search Attractions</h2>
+        
+        <form> 
+            <label for="attraction-type"> Attraction Type  </label>
+            <select id="attraction-type" name="attraction-type">
+                <option disabled selected > Please Select </option>
+                <option value="at-1"> Attraction type 1 </option>
+                <option value="at-2"> Attraction type 2 </option>
+                <option value="at-3"> Attraction type 3 </option>
+            </select>
+            
+             <label for="attraction-type"> Ride Thrill Level  </label>
+            <select id="attraction-type" name="attraction-type">
+                <option disabled selected > Please Select </option>
+                <option value="at-1">  Low  </option>
+                <option value="at-2"> Medium </option>
+                <option value="at-3"> High  </option>
+            </select>
+            
+            <div id="filter-options"> 
+                <label> Additional Filter Options:  </label>
+                <!-- good for kids? --> 
+                <div> 
+                    <input id="check-kids" value="kids" type="checkbox">
+                    <label for="check-kids"> Good for Kids </label>
+                </div>
+                
+                <!-- Water Ride? --> 
+                <div> 
+                    <input id="check-water" value="water" type="checkbox">
+                    <label for="check-water"> Water Ride  </label>
+                </div>
+            </div>
+            
+            <div id="search-reset"> 
+                <button id="search" type="button" name="search"> Search </button>
+                <button id="reset" type="button" name="reset"> Reset </button>
+            </div>
+        </form>
+        <br>
+        <hr> 
+    </section>
+    
+    <!-- Attractions --> 
+    <section id="search-results">
+        <h2> Search Results </h2>
+        <label for="sort-by"> Sort By </label>
+        <select id="sort-by" name="sort-by"> 
+            <option value="sort-by-az"> A-Z </option>
+            <option value="sort-by-thrill"> Thrill Level </option>
+            <option value="sort-by-rating"> Rating </option>
+        </select>
+        <section class="results" >
+            <section class="search-result" id="roller-coaster"> 
+                <h3> <a href="roller-coaster.html">Roller Coaster</a> </h3>
+                <img src="images/roller_coaster.jpeg" style="width:40%" alt="roller coaster">
+                <p class="attraction-blurb"> The Roller coaster is our most popular ride! </p>
+            </section>
+
+            <section class="search-result" id="gravitron"> 
+                <h3> <a href="#">Gravitron</a> </h3>
+                <img src="images/gravitron.jpeg" style="width:40%" alt="gravitron">
+                <p class="attraction-blurb"> The Gravitron offers an out-of-this world physics-based experience! </p>
+            </section>
+        </section>
+    <br> 
+    </section>
+    
+     
+   
+        
+    <!-- footer --> 
+    <footer class="footer"> 
+        <!-- social media links in a div container to make them float right  --> 
+        <div style="float: right"> 
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
+      
+      
+        <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" /></a>
+      
+      
+        <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="Youtube" /></a>
+        </div>
+        <!-- categories of other helpful links in unordered lists --> 
+        <ul class="footer-link-category"> 
+            <LH> Things to Do</LH>
+            <li> <a href="#"> Attractions </a></li>
+            <li> <a href="#" > Restaurants   </a></li>
+            <li> <a href="#" > Dining Plans  </a></li>
+        </ul>
+        
+        <ul class="footer-link-category"> 
+            <LH> Places to Stay  </LH>
+            <li> <a href="#"> Resort Hotels </a></li>
+            <li> <a href="#"> Special Offers </a></li>
+            <li> <a href="#"> AirBnB </a></li>
+        </ul>
+        
+        <ul class="footer-link-category"> 
+            <LH> Help &amp; Information  </LH>
+            <li> <a href="#"> Site Map  </a></li>
+            <li> <a href="#"> FAQs </a></li>
+            <li> <a href="#"> Help Center</a></li>
+            <li> <a href="#"> Contact Us</a></li>
+        </ul>
+        
+        <ul class="horizontal-list" id="legalLinks"> 
+            <LH> Legal: </LH>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Legal Notices</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies Policy</a></li>
+            <li><a href="#">EU &amp; UK Privacy Rights</a></li>
+        </ul>
+    </footer>
+    
+	</body>
+</html>
+

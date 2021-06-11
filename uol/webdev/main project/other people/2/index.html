@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- The title of the main page will show on the browser's tab and in the search engine results. -->
+  <title>University of London Theme Park - tickets, deals - family holidays</title>
+
+  <!-- Defining metadata about the main page-->
+  <meta name="description" content="Welcome to the official website of University of London Theme Park. ">
+  <meta name="keywords" content="theme park, university of london, roller coaster, london">
+  <meta name="author" content="Team 87 (tutor group 10) of Web Development by University of London">
+
+  <!-- Specify the character encoding as UTF-8, so that we can use non-English characters as well-->
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+  <!-- Header section.  -->
+  <header>
+    <!--
+      Social media links - Unordered list of our social media connections.
+      When the user clicks on any of these links, the social media page
+      will open in a new browser tab (target="_blank")
+
+      Accessibility: We added the `alt` attribute to every image so that
+      we can provide extra information if a user for some reason cannot
+      view it.
+    -->
+    <ul id="socialLinks">
+      <li>
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
+      </li>
+      <li>
+        <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" /></a>
+      </li>
+      <li>
+        <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="Youtube" /></a>
+      </li>
+    </ul>
+
+    <!--
+      Language selection - An unordered (horizontal) list of available languages.
+      We won't implement/translate the site in Spanish or Russian.
+    -->
+    <ul id="languageSelector">
+      <li>English</li>
+      <li><a href="#">Español</a></li>
+      <li><a href="#">Русский</a></li>
+    </ul>
+  </header>
+
+  <!--
+    Main navigation - we'll use an unordered list for the primary navigation element.
+    It will be a horizontal menu when we apply CSS later.
+  -->
+  <nav>
+    <img src="images/logo3.png" alt="UoL Theme Park Logo" />
+    <ul id="mainNavigation">
+      <li>Home</li>
+      <li><a href="attractions.html">Things to Do</a></li>
+      <li><a href="hotels.html">Places to Stay</a></li>
+      <li><a href="info.html">Help & Rules</a></li>
+    </ul>
+  </nav>
+
+  <!--
+    Main attraction -
+  -->
+  <section id="mainAttraction">
+    <h1>UoL Roller Coaster</h1>
+
+    <!-- Main promotional video, for accessibility english subtitle has been added -->
+    <video src="videos/roller_coaster_1.mp4" width="800" controls loop preload="metadata">
+      <!-- Later we can add more languages by adding more <track> tag to the <video> element. -->
+      <track label="English" kind="subtitles" srclang="en" src="videos/roller_coaster_1.vtt" default>
+    </video>
+
+  </section>
+
+  <!-- More attractions section -->
+  <section id="attractions">
+
+    <h1>Attractions</h1>
+
+    <!-- First row of attractions (box sizes => 2:1) -->
+    <div class="attractionBoxDouble">
+      <h4>Roller Coaster <a href="#">open</a></h4>
+      <img src="images/roller_coaster_1_full.jpg" width="400" alt="Main attraction - Roller Coaster" />
+    </div>
+    <div class="attractionBoxSingle">
+      <h4>Universal Studio - Harry Potter <a href="#">open</a></h4>
+      <img src="images/harry_potter_1.jpg" height="300" alt="Universal Studio - Harry Potter" />
+    </div>
+
+    <!-- Second row of attractions (box sizes => 1:1:1) -->
+    <div class="attractionBoxSingle">
+      <h4>Water slide <a href="#">open</a></h4>
+      <img src="images/water_slide_1.jpg" height="300" alt="Water slide" />
+    </div>
+    <div class="attractionBoxSingle">
+      <h4>Legoland for younger kids <a href="#">open</a></h4>
+      <img src="images/legoland_1.jpg" height="300" alt="Legoland build and test" />
+    </div>
+    <div class="attractionBoxSingle">
+      <h4>Seaworld - Penguin Encounter <a href="#">open</a></h4>
+      <img src="images/seaworld_penguins_1.jpg" height="300" alt="Seaworld penguins" />
+    </div>
+
+  </section>
+
+  <!-- Information section -->
+  <section id="information">
+    <h1>Information</h1>
+
+    <div class="informationBox">
+      <h3>Opening Hours</h3>
+      <table>
+        <tbody>
+          <tr>
+            <th>Monday</th>
+            <td>9:00 - 20:00</td>
+          </tr>
+          <tr>
+            <th>Tuesday</th>
+            <td>9:00 - 20:00</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td>9:00 - 20:00</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td>9:00 - 20:00</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td>9:00 - 20:00</td>
+          </tr>
+          <tr>
+            <th>Saturday</th>
+            <td>9:00 - 19:00</td>
+          </tr>
+          <tr>
+            <th>Sunday</th>
+            <td>9:00 - 16:00</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Address</h3>
+      <address>
+        University of London Theme Park<br>
+        Malet Street<br>
+        London WC1E 7HU
+      </address>
+    </div>
+    <div class="informationBox">
+      <h3>Covid-19</h3>
+      <p>An inherent risk of exposure to COVID-19 exists in any public place where people are present.</p>
+      <a href="info.html">Learn more...</a>
+    </div>
+    <div class="informationBox">
+      <h3>Security</h3>
+      <p>We have a comprehensive approach to security that includes measures that are visible and others that are not.</p>
+      <a href="info.html">Learn more...</a>
+    </div>
+
+  </section>
+
+  <footer>
+
+    <!-- Footer link section -->
+    <section>
+      <div class="linkCategoryBox">
+        <h3>Things to Do</h3>
+        <ul id="thingsToDoLinks">
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="#">Restaurants</a></li>
+          <li><a href="#">Dining Plans</a></li>
+        </ul>
+      </div>
+      <div class="linkCategoryBox">
+        <h3>Places to Stay</h3>
+        <ul id="placesToStayLinks">
+          <li><a href="#">Resort Hotels</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Airbnb</a></li>
+        </ul>
+      </div>
+      <div class="linkCategoryBox">
+        <h3>Help & Information</h3>
+        <ul id="informationLinks">
+          <li><a href="#">Contact us</a></li>
+          <li><a href="info.html">Help Center</a></li>
+          <li><a href="#">F.A.Q.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Legal links -->
+    <section>
+      <h3>Legal information</h3>
+      <ul id="legalLinks">
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Legal Notices</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookies Policy</a></li>
+        <li><a href="#">EU & UK Privacy Rights</a></li>
+      </ul>
+    </section>
+
+  </footer>
+
+</body>
+
+</html>

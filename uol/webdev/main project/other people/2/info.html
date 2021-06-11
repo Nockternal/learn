@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- The title of the main page will show on the browser's tab and in the search engine results. -->
+  <title>University of London Theme Park - tickets, deals - family holidays</title>
+
+  <!-- Defining metadata about the main page-->
+  <meta name="description" content="Welcome to the official website of University of London Theme Park. ">
+  <meta name="keywords" content="theme park, university of london, roller coaster, london">
+  <meta name="author" content="Team 87 (tutor group 10) of Web Development by University of London">
+
+  <!-- Specify the character encoding as UTF-8, so that we can use non-English characters as well-->
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+  <!-- Header section.  -->
+  <header>
+    <!-- Links to our social media pages. -->
+    <ul>
+      <li>
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
+      </li>
+      <li>
+        <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" /></a>
+      </li>
+      <li>
+        <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="Youtube" /></a>
+      </li>
+    </ul>
+
+    <!-- Language selection -->
+    <ul>
+      <li>English</li>
+      <li><a href="#">Español</a></li>
+      <li><a href="#">Русский</a></li>
+    </ul>
+  </header>
+
+  <!-- Main navigation -->
+  <nav>
+    <img src="images/logo3.png" alt="UoL Theme Park Logo" />
+    <ol>
+
+     <li><a href="index.html">Home</a></li>
+      <li><a href="attractions.html">Things to Do</a></li>
+      <li><a href="hotels.html">Places to Stay</a></li>
+      <li>Help & Rules</li>
+
+    </ol>
+  </nav>
+  
+  <h1>UoL Theme Park</h1>
+  <h2>Help & Rules</h2>
+  <!--Page identifiers-->
+
+  <img src="images2/Banner1.png" />
+  <!--covid message-->
+  <img src="images2/CovidBan.png" />
+
+  <p>COVID-19 Warning
+    We have taken enhanced health and safety measures—for you, our other Guests, and Cast Members. You must follow all posted instructions while visiting Walt Disney World Resort.
+    
+    An inherent risk of exposure to COVID-19 exists in any public place where people are present. COVID-19 is an extremely contagious disease that can lead to severe illness and death. According to the Centers for Disease Control and Prevention, senior citizens and Guests with underlying medical conditions are especially vulnerable.
+    
+    
+    By visiting Walt Disney World Resort you voluntarily assume all risks related to exposure to COVID-19.
+    
+    
+    Help keep each other healthy.</p>
+    
+    <!--Information slide show with img indicators-->
+  <img class="mySlides" src="images2/propertyrules.png">
+  <img class="mySlides" src="images2/prohib.png">
+  <img class="mySlides" src="images2/prohiba.png">
+  <img class="mySlides" src="images2/animalpol.png">
+  
+
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+  showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</div>
+</body>
+
+<footer>
+
+  <section>
+    <h3>Contact Us</h3>
+    <ul id="phonenumbers">
+      <li>0000000001</li>
+      <li>0000000002</li>
+      <li>0000000003</li>
+    </ul>
+    
+  </section>
+  <section>
+    <h3>Socials</h3>
+    <ul>
+      <li>
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
+      </li>
+      <li>
+        <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" /></a>
+      </li>
+      <li>
+        <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="Youtube" /></a>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h3>Legal information</h3>
+    <ul id="legalLinks">
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Legal Notices</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Cookies Policy</a></li>
+      <li><a href="#">EU & UK Privacy Rights</a></li>
+    </ul>
+  </section>
+</footer>
+
+
+
+</html>
