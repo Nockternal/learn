@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+    background-color: lightblue;
+}
+
+.menu-item {
+    width: 250px;
+    height: 50px;
+    border: 1px solid gray;
+    list-style-type: none;
+    padding: 5px;
+    
+}
+
+.container {
+  display: flex;
+}
+
+.hover {
+    background: rgba(102, 101, 101, 0.747)
+}
+
+.selected{
+    background: rgb(41, 209, 63)
+}
+
